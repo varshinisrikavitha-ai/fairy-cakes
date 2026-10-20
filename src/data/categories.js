@@ -11,5 +11,5 @@ export const categories = [
   ["Kids' Cakes", 'Colourful ideas for little celebrations.', 'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=900&q=85'],
   ['Cupcakes', 'Little boxes of joy for sharing or gifting.', 'https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=85'],
   ['Brownies & Desserts', 'A sweet spread for every kind of gathering.', 'https://images.unsplash.com/photo-1599785209707-a456fc1337bb?auto=format&fit=crop&w=900&q=85'],
-  ['Custom Cakes', 'Bring your idea and let’s plan something special.', 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85'],
+  ['Custom Celebration Cakes', 'Bring your idea and let’s plan something special.', 'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85'],
 ].map(([name, description, image]) => ({ name, description, image }));

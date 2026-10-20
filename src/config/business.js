@@ -1,17 +1,18 @@
-// Public listing details used for this design demo. Confirm these with the owner before publication.
+// Public listing details used for this unofficial design demo.
+// Confirm every business detail with the owner before publication.
 export const business = {
-  name: 'Caketopia Home Baking',
-  shortName: 'Caketopia',
-  phone: '+91 97917 11204',
-  phoneHref: 'tel:+919791711204',
-  whatsappNumber: '919791711204',
-  address: 'Site 88, Nila Residency, Saravanampatty, Vellamadi Road, Athipalayam, Coimbatore, Tamil Nadu 641110.',
-  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Caketopia+Home+Baking+Athipalayam+Coimbatore',
-  disclaimer: 'Unofficial website concept created as a design demo. Business details and content should be confirmed by the owner before publication.',
+  name: 'Fairy Cakes (Home Bakes)',
+  shortName: 'Fairy Cakes',
+  phone: '+91 88078 38751',
+  phoneHref: 'tel:+918807838751',
+  whatsappNumber: '918807838751',
+  location: 'Komarapalayam, Tamil Nadu',
+  googleSearchUrl: 'https://www.google.com/search?q=Fairy+Cakes+Home+Bakes+Komarapalayam',
+  disclaimer: 'Unofficial website concept created as a design demo. Business details, product availability and content must be confirmed by the owner before publication.',
 };
 
 export function whatsappUrl(message) {
-  if (!business.whatsappNumber) return null;
+  if (!business.whatsappNumber || !/^\d{8,15}$/.test(business.whatsappNumber) || !message) return null;
   return `https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
